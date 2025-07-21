@@ -37,17 +37,10 @@
     <meta name="twitter:image" content="https://test.herpromocodes.com/uploads/stores/1700657094_hi150 .png">
     <meta name="twitter:image:width" content="auto">
     <meta name="twitter:image:height" content="auto"><!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="./laravel-rebuild_files/js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js',
-            new Date()
-        ); // Cấu hình Google Analytics gtag('config', 'G-QLFYFTG85P'); // Cấu hình Google Ads gtag('config', 'AW-939819577'); 
-    </script>
+    {{ $head }}
+
+    <script async="" src="./laravel-rebuild_files/js"></script>
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -56,9 +49,6 @@
             margin-right: 15px;
         }
     </style>
-
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body id="body_user">
