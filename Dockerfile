@@ -68,3 +68,5 @@ RUN useradd -ms /bin/bash --no-user-group -g $WWWGROUP -u 1337 sail
 EXPOSE 80/tcp
 
 ENTRYPOINT ["start-container"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=80"]
+
